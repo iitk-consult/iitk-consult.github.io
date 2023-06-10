@@ -175,7 +175,12 @@
 }
 /* manually adding */
 .navbar-toggler {
-    background-color: #2b2a2a;
+    background-color: transparent;
+}
+/* this will edit the hambberger menu in the mobile setting */
+.navbar-toggler-icon {
+    background-color: #3d3636;
+    border-radius: 15%;
 }
 
 /*** Header ***/
