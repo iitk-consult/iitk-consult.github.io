@@ -26,12 +26,11 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 
 <body>
     <!-- Spinner Start -->
@@ -39,14 +38,12 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
-
-
     <!-- Topbar Start -->
     <div class="container-fluid px-0 navbar-light" style="background-color: #0c0c0c; opacity: 90%">
         <div class="row g-0 d-none d-lg-flex">
             <div class="col-lg-6 ps-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
+                    <span>Connect With Us:</span>
                     <a class="btn btn-link text-light" href="https://www.linkedin.com/company/iitkconsult/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-link text-light" href="https://www.facebook.com/iitkcg/"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-link text-light" href="https://www.instagram.com/iitkconsult/"><i class="fab fa-instagram"></i></a>
@@ -61,7 +58,13 @@
         </div>
     </div>
     <!-- Topbar End -->
-
+    <div class="absolute">
+        <div class="absolute inset-0 justify-center">
+            <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+            <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+            <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+        </div>
+    </div>
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top px-4 px-lg-5 py-0 " style="background-color: #0c0c0c; opacity: 90%;">
@@ -73,17 +76,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="team.html" class="nav-item nav-link">Team</a>
                 <a href="projects.html" class="nav-item nav-link">Our Projects</a>
-                <a href="blogs.html" class="nav-item nav-link">Blogs</a>
-                <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
-                <a href="index.html#contact-us" class="nav-item nav-link">Contact Us</a>
+                <a href="index.html" class="nav-item nav-link active">Blogs</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
@@ -97,194 +98,231 @@
             </nav>
         </div>
     </div>
-    <!-- Page Header Ends -->
+    <!-- Page Header End -->
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog or Project Reports</title>
+    <!-- Include any necessary CSS or JavaScript libraries here -->
+    <style>
+        /* Add styles for the background image */
+        .blog-background {
+            background-image: url('./img/consult-icon.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 250px; /* Adjust the height as needed */
+            position: relative;
+        }
 
-    <!-- experiment for blog here  -->
-    <section id="bricks">
+        .blog-container {
+            position: relative;
+            z-index: 1; /* Ensure the blog entries are above the background */
+        }
 
-        <div class="row masonry">
-    
-            <!-- brick-wrapper -->
-          <div class="bricks-wrapper">
-    
-              <div class="grid-sizer"></div>
-    
-              
-    
-              <article class="brick entry format-standard animate-this">
-    
-                <div class="entry-thumb">
-                   <a href="single-standard.html" class="thumb-link">
-                       <img src="images/thumbs/diagonal-building.jpg" alt="building">             
-                   </a>
-                </div>
-    
-                <div class="entry-text">
-                    <div class="entry-header">
-    
-                        <div class="entry-meta">
-                            <span class="cat-links">
-                                <a href="#">Design</a> 
-                                <a href="#">Photography</a>               				
-                            </span>			
-                        </div>
-    
-                        <h1 class="entry-title"><a href="single-standard.html">Just a Standard Format Post.</a></h1>
-                        
-                    </div>
-                         <div class="entry-excerpt">
-                             Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                         </div>
-                </div>
-    
-                 </article> <!-- end article -->
-    
-             <article class="brick entry format-standard animate-this">
-    
-                <div class="entry-thumb">
-                   <a href="single-standard.html" class="thumb-link">
-                       <img src="images/iitk.jpg" alt="ferris wheel">                   
-                   </a>
-                </div>
-    
-                <div class="entry-text">
-                    <div class="entry-header">
-    
-                        <div class="entry-meta">
-                            <span class="cat-links">
-                                <a href="#">Design</a> 
-                                <a href="#">UI</a>                			
-                            </span>			
-                        </div>
-    
-                        <h1 class="entry-title"><a href="single-standard.html">This Is Another Standard Format Post.</a></h1>
-                        
-                    </div>
-                         <div class="entry-excerpt">
-                             Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                         </div>
-                </div>
-                
-                 </article> <!-- end article -->
-    
-                 <article class="brick entry animate-this">
-    
-                <div class="entry-thumb">
-                   <a href="single-standard.html" class="thumb-link">
-                       <img src="images/iitk.jpg" alt="Liberty">                      
-                   </a>
-                </div>
-    
-                <div class="entry-text">
-                    <div class="entry-header">
-    
-                        <div class="entry-meta">
-                            <span class="cat-links">
-                                <a href="#">Branding</a> 
-                                <a href="#">html</a>                	
-                            </span>			
-                        </div>
-    
-                        <h1 class="entry-title"><a href="single-standard.html">Designing With Black and White.</a></h1>
-                        
-                    </div>
-                         <div class="entry-excerpt">
-                             Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                         </div>
-                </div> 
-                
-                 </article> <!-- end article -->
+        /* Center the service-icon */
+        .service-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .service-icon img {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+            border-radius: 50%;
+            transition: transform 0.5s ease-in-out; /* Add transition for smooth flip effect */
+        }
+        .service-icon img {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+            border-radius: 50%;
+            animation: spin 2s linear infinite; /* Add animation for continuous spinning */
+        }
+        /* Add hover effect for the image */
+        .service-icon:hover img {
+            transform: scale(1.1) rotate(5deg); /* Adjust the scale and rotation values as needed */
+        }
+        /* Add styles to make sure the image is responsive */
+        @media (max-width: 768px) {
+            .blog-background,
+            .blog-container {
+                height: 150px; /* Adjust the height for smaller screens */
+            }
+        }
+        /* Add animation keyframes */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            45% { transform: rotate(30deg); }
+        }
+    </style>
+</head>
+    <!-- Main Container -->
+    <div class="container-xxl py-5">
 
+        <!-- Nested Container -->
+        <div class="container">
 
-                 <article class="brick entry format-video animate-this">
+            <!-- Section: Research Reports -->
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-5">Research Reports</h1>
+            </div>
 
-                    <div class="entry-thumb video-image">
-                       <a href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" data-lity>
-                           <img src="images/iitk.jpg" alt="bokeh">                   
-                       </a>
-                    </div>
-     
-                    <div class="entry-text">
-                        <div class="entry-header">
-     
-                            <div class="entry-meta">
-                                <span class="cat-links">
-                                    <a href="#">Design</a> 
-                                    <a href="#">Branding</a>               			
-                                </span>			
+            <!-- Section: Project Reports -->
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-5"><a id="ongoing_projects">Project Reports</a></h1>
+            </div>
+
+            <!-- Blog Container -->
+            <div class="blog-container">
+
+                <!-- Blog Entries Row -->
+                <div class="row">
+
+                    <!-- Blog Entry 1 -->
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex h-100">
+                            <div class="service-img">
+                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
                             </div>
-     
-                            <h1 class="entry-title"><a href="single-video.html">This Is a Video Post Format.</a></h1>
-                            
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
+                                </div>
+                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
+                                <p class="mb-4">
+                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
+                                </p>
+                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                            </div>
                         </div>
-                             <div class="entry-excerpt">
-                                 Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                             </div>
+                    </div>
+
+                    <!-- Blog Entry 2 -->
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex h-100">
+                            <div class="service-img">
+                                <img class="img-fluid" src="img/bg_super.png" alt="Blog Entry Image 1">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="img/ML_icon.png" alt="Category Icon">
+                                </div>
+                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
+                                <p class="mb-4">
+                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
+                                </p>
+                                <div class="card middle">
+                                    <div class="front">
+                                        <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content middle">
+                                            <h2>Fun Fact about the Report</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                     </article> <!-- end article -->
-     
-                     <article class="brick entry animate-this">
-     
-                    <div class="entry-thumb">
-                       <a href="single-standard.html" class="thumb-link">
-                           <img src="images/iitk.jpg" alt="Lighthouse">                      
-                       </a>
-                    </div>
-     
-                    <div class="entry-text">
-                        <div class="entry-header">
-     
-                            <div class="entry-meta">
-                                <span class="cat-links">
-                                    <a href="#">Photography</a> 
-                                    <a href="#">Design</a>
-                                </span>			
+                    <!-- Blog Entry 3 -->
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex h-100">
+                            <div class="service-img">
+                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
                             </div>
-     
-                            <h1 class="entry-title"><a href="single-standard.html">Breathtaking Photos of Lighthouses.</a></h1>
-                            
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
+                                </div>
+                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
+                                <p class="mb-4">
+                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
+                                </p>
+                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                            </div>
                         </div>
-                             <div class="entry-excerpt">
-                                 Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                             </div>
+                    </div>
+
+                </div>
+                <!-- End of Blog Entries Row -->
+
+                <div class="row">
+
+                    <!-- Blog Entry 4 -->
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex h-100">
+                            <div class="service-img">
+                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
+                                </div>
+                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
+                                <p class="mb-4">
+                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
+                                </p>
+                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Entry 5 -->
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex h-100">
+                            <div class="service-img">
+                                <img class="img-fluid" src="img/bg_super.png" alt="Blog Entry Image 1">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="img/ML_icon.png" alt="Category Icon">
+                                </div>
+                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
+                                <p class="mb-4">
+                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
+                                </p>
+                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                            </div>
+                        </div>
                     </div>
                     
-                     </article> <!-- end article -->
-     
-                     <article class="brick entry animate-this">
-     
-                    <div class="entry-thumb">
-                       <a href="single-standard.html" class="thumb-link">
-                           <img src="images/iitk.jpg" alt="Liberty">                      
-                       </a>
-                    </div>
-     
-                    <div class="entry-text">
-                        <div class="entry-header">
-     
-                            <div class="entry-meta">
-                                <span class="cat-links">
-                                    <a href="#">Branding</a> 
-                                    <a href="#">html</a>                	
-                                </span>			
+                    <!-- Blog Entry 6 -->
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex h-100">
+                            <div class="service-img">
+                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
                             </div>
-     
-                            <h1 class="entry-title"><a href="single-standard.html">Designing With Black and White.</a></h1>
-                            
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
+                                </div>
+                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
+                                <p class="mb-4">
+                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
+                                </p>
+                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                            </div>
                         </div>
-                             <div class="entry-excerpt">
-                                 Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-                             </div>
-                        </div>
-                    
-                     </article> <!-- end article -->
-    
-          </div> <!-- end brick-wrapper --> 
-    
-        </div> <!-- end row -->
-    
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- End of Blog Container -->
+
+        </div>
+        <!-- End of Nested Container -->
+
+    </div>
+    <!-- End of Main Container -->
+
+</body>
+
+</html>
+
 
     <!-- Footer Start -->
     <div class="container-fluid footer mt-5 py-5 wow fadeIn" style="background-color: rgb(55, 53, 53);" data-wow-delay="0.1s">
@@ -308,7 +346,10 @@
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://www.linkedin.com/company/iitkconsult/about/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+            
                 <div class="col-lg-3 col-md-6">
+                    <!-- adding space -->
+                    <p class="mobile-only"><br><br></p>
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <a class="btn btn-link" href="index.html#about">About Us</a>
                     <a class="btn btn-link" href="#team">Team</a>
@@ -356,4 +397,20 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
+</html>
