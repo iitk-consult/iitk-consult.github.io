@@ -1,7 +1,111 @@
+.blogs-column{
+    margin-top: -1rem;
+  }
+  .blogs-container{
+    display:grid;
+    width:100%;
+    grid-template-columns:1.2fr 1.5fr;
+    grid-template-rows:1fr 2fr 1fr;
+    gap:10px;
+  }
+
+  .blogs-container-image
+  {
+    grid-row:span 3;
+    display:flex;
+  }
+  .blogs-conatiner-category
+  {
+    height:50%;
+    display:flex;
+    align-items:center;
+  }
+  .blogs-container-author-and-link
+  {
+    display:flex;
+  }
+  .blogs-author-name
+  {
+    font-size:0.8rem;
+    width:70%;
+  }
+  .blogs-link
+  {
+    font-size:0.8rem;
+    text-align:right;
+  }
+  .tag-Mconsult{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Make the buttons curved */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
+    background-color: #cdf9d2;
+    font-weight: bold;
+    color: #399542;
+  }
+  .tag-ML-DS{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Make the buttons curved */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
+    background-color: #fcb9b9;
+    font-weight: bold;
+    color: #940303;
+  }
+  .tag-Hybrid{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Make the buttons curved */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
+    background-color: #c3ecf5;
+    font-weight: bold;
+    color: #3359b7;
+  }
+  .date{
+    color: rgb(17, 17, 17);
+    font-size: 12.5px;
+  } 
+  .blogs-container-link {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Make the buttons curved */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
+    background-color: #5db0dd;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;   /* Change the background color to blue */
+  }
+  .blogs-container-link:hover {
+    background-color: #ccc;
+  }
+  .blogs-container-link:active {
+    background-color: #bbb;
+  }
+  .item
+  {
+    margin:10px;
+  }
+
+  .blogs-container-logo
+  {
+   height: 33px;
+   width: 33px;
+   object-position: -5px -4px;
+  }
+
+.w-full
+{
+object-position: top;
+}
+
+
+
 .explore_more{
     margin-top: 1rem;
 }
-
 .org {
     position: absolute;
     bottom: 0;
@@ -278,7 +382,6 @@
     width: calc(100% + 60px);
     left: 0;
 }
-
 
 /*** About ***/
 .about-experience {
@@ -574,3 +677,6 @@
       height: 10%; */
     }
   }
+
+  /*just checking*/
+  
