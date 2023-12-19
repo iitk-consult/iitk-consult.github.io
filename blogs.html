@@ -33,18 +33,13 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
     <!-- Topbar Start -->
     <div class="container-fluid px-0 navbar-light" style="background-color: #0c0c0c; opacity: 90%">
         <div class="row g-0 d-none d-lg-flex">
             <div class="col-lg-6 ps-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Connect With Us:</span>
-                    <a class="btn btn-link text-light" href="https://www.linkedin.com/company/iitkconsult/"><i class="fab fa-linkedin-in"></i></a>
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href="https:-//www.linkedin.com/company/iitkconsult/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-link text-light" href="https://www.facebook.com/iitkcg/"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-link text-light" href="https://www.instagram.com/iitkconsult/"><i class="fab fa-instagram"></i></a>
                 </div>
@@ -58,13 +53,6 @@
         </div>
     </div>
     <!-- Topbar End -->
-    <div class="absolute">
-        <div class="absolute inset-0 justify-center">
-            <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
-            <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
-            <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
-        </div>
-    </div>
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top px-4 px-lg-5 py-0 " style="background-color: #0c0c0c; opacity: 90%;">
@@ -79,12 +67,13 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="team.html" class="nav-item nav-link">Team</a>
                 <a href="projects.html" class="nav-item nav-link">Our Projects</a>
-                <a href="index.html" class="nav-item nav-link active">Blogs</a>
+                <a href="blogs.html" class="nav-item nav-link active">Blogs</a>
                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
+                <a href="index.html#contact-us" class="nav-item nav-link">Contact Us</a>
             </div>
         </div>
     </nav>
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
@@ -100,229 +89,127 @@
     </div>
     <!-- Page Header End -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog or Project Reports</title>
-    <!-- Include any necessary CSS or JavaScript libraries here -->
-    <style>
-        /* Add styles for the background image */
-        .blog-background {
-            background-image: url('./img/consult-icon.png'); /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 250px; /* Adjust the height as needed */
-            position: relative;
-        }
 
-        .blog-container {
-            position: relative;
-            z-index: 1; /* Ensure the blog entries are above the background */
-        }
-
-        /* Center the service-icon */
-        .service-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .service-icon img {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px; /* Adjust the size as needed */
-            border-radius: 50%;
-            transition: transform 0.5s ease-in-out; /* Add transition for smooth flip effect */
-        }
-        .service-icon img {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px; /* Adjust the size as needed */
-            border-radius: 50%;
-            animation: spin 2s linear infinite; /* Add animation for continuous spinning */
-        }
-        /* Add hover effect for the image */
-        .service-icon:hover img {
-            transform: scale(1.1) rotate(5deg); /* Adjust the scale and rotation values as needed */
-        }
-        /* Add styles to make sure the image is responsive */
-        @media (max-width: 768px) {
-            .blog-background,
-            .blog-container {
-                height: 150px; /* Adjust the height for smaller screens */
-            }
-        }
-        /* Add animation keyframes */
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            45% { transform: rotate(30deg); }
-        }
-    </style>
-</head>
-    <!-- Main Container -->
     <div class="container-xxl py-5">
-
-        <!-- Nested Container -->
-        <div class="container">
-
-            <!-- Section: Research Reports -->
+        <div class="container"> 
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Works</p>
                 <h1 class="mb-5">Research Reports</h1>
             </div>
-
-            <!-- Section: Project Reports -->
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="mb-5"><a id="ongoing_projects">Project Reports</a></h1>
+                <h1 class="mb-5">Project Reports</h1>
             </div>
-
-            <!-- Blog Container -->
-            <div class="blog-container">
-
-                <!-- Blog Entries Row -->
-                <div class="row">
-
-                    <!-- Blog Entry 1 -->
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex h-100">
-                            <div class="service-img">
-                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
-                            </div>
-                            <div class="service-text p-5 pt-0">
-                                <div class="service-icon">
-                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
-                                </div>
-                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
-                                <p class="mb-4">
-                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
-                                </p>
-                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
-                            </div>
+            <div class="row gy-5 gx-4 blogs-row">
+                <div class="col-lg-6 pt-5 wow fadeInUp blogs-column" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/black_bg.jpg" alt="">
                         </div>
-                    </div>
-
-                    <!-- Blog Entry 2 -->
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex h-100">
-                            <div class="service-img">
-                                <img class="img-fluid" src="img/bg_super.png" alt="Blog Entry Image 1">
-                            </div>
-                            <div class="service-text p-5 pt-0">
-                                <div class="service-icon">
-                                    <img class="img-fluid rounded-circle" src="img/ML_icon.png" alt="Category Icon">
-                                </div>
-                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
-                                <p class="mb-4">
-                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
-                                </p>
-                                <div class="card middle">
-                                    <div class="front">
-                                        <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                        <div class="blogs-container">
+                            <div class="item blogs-container-image"><img src="./img/data.png"  class="rounded" style="width: 200px; height: 200px;"></div>
+                            <div class="item blogs-container-category"><button class="tag-Mconsult">Mconsult</button>  <strong class="date">&nbsp;&nbsp;23 Aug 2023</strong></div>
+                            <div class="item blogs-container-heading"><h4>Kranion  AI X ICG</h3></div>
+                                <div class="item blogs-container-author-and-link">
+                                    <div class="w-8 h-8 rounded">
+                                        <img class="blogs-container-logo" src="img/logo.png" alt="logo">
                                     </div>
-                                    <div class="back">
-                                        <div class="back-content middle">
-                                            <h2>Fun Fact about the Report</h2>
-                                        </div>
+                                    <div class="blogs-author-name"><strong>IITK CONSULTING GROUP</strong></div>
+                                    <a href="pastereportlinkhere.com">
+                                        <button class="blogs-container-link"><strong>Download</strong></button>
+                                    </a>
+ 
+                                </div>
+                            <div class="px-3 bg-primary-500/5 text-primary-500 pt-3 pb-1">
+                                    <marquee class="w-full" direction="left" style="position:absolute; bottom:15px; width: 590px;">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consequatur cumque repellat iure perferendis doloribus.
+                                    </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6 pt-5 wow fadeInUp blogs-column" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/black_bg.jpg" alt="">
+                        </div>
+                        <div class="blogs-container">
+                            <div class="item blogs-container-image"><img src="./img/product-4.jpg"  class="rounded" style="width: 200px; height: 200px;"></div>
+                            <div class="item blogs-container-category"><button class="tag-Hybrid">Hybrid</button>  <strong class="date">&nbsp;&nbsp;23 Aug 2023</strong></div>
+                            <div class="item blogs-container-heading"><h4>Navjyoti Foundation X ICG</h3></div>
+                                <div class="item blogs-container-author-and-link">
+                                    <div class="w-8 h-8 rounded">
+                                        <img class="blogs-container-logo" src="img/logo.png" alt="logo">
                                     </div>
+                                    <div class="blogs-author-name"><strong>IITK CONSULTING GROUP</strong></div>
+                                    <a href="pastereportlinkhere.com">
+                                        <button class="blogs-container-link"><strong>Download</strong></button>
+                                    </a>
                                 </div>
+                            <div class="px-3 bg-primary-500/5 text-primary-500 pt-3 pb-1">
+                                    <marquee class="w-full" direction="left" style="position:absolute; bottom:15px; width: 590px;">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consequatur cumque repellat iure perferendis doloribus.
+                                    </marquee>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Blog Entry 3 -->
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex h-100">
-                            <div class="service-img">
-                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
-                            </div>
-                            <div class="service-text p-5 pt-0">
-                                <div class="service-icon">
-                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
+                </div> 
+                <div class="col-lg-6 pt-5 wow fadeInUp blogs-column" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/black_bg.jpg" alt="">
+                        </div>
+                        <div class="blogs-container">
+                            <div class="item blogs-container-image"><img src="./img/new_icon.jpg"  class="rounded" style="width: 200px; height: 200px;"></div>
+                            <div class="item blogs-container-category"><button class="tag-ML-DS">ML-DS</button>  <strong class="date">&nbsp;&nbsp;23 Aug 2023</strong></div>
+                            <div class="item blogs-container-heading"><h4>Titli Foundation X ICG</h3></div>
+                                <div class="item blogs-container-author-and-link">
+                                    <div class="w-8 h-8 rounded">
+                                        <img class="blogs-container-logo" src="img/logo.png" alt="logo">
+                                    </div>
+                                    <div class="blogs-author-name"><strong>IITK CONSULTING GROUP</strong></div>
+                                    <a href="pastereportlinkhere.com">
+                                        <button class="blogs-container-link"><strong>Download</strong></button>
+                                    </a>
+
                                 </div>
-                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
-                                <p class="mb-4">
-                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
-                                </p>
-                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
+                            <div class="px-3 bg-primary-500/5 text-primary-500 pt-3 pb-1">
+                                    <marquee class="w-full" direction="left" style="position:absolute; bottom:15px; width: 590px;">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consequatur cumque repellat iure perferendis doloribus.
+                                    </marquee>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <!-- End of Blog Entries Row -->
-
-                <div class="row">
-
-                    <!-- Blog Entry 4 -->
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex h-100">
-                            <div class="service-img">
-                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
-                            </div>
-                            <div class="service-text p-5 pt-0">
-                                <div class="service-icon">
-                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
+                </div>                
+                <div class="col-lg-6 pt-5 wow fadeInUp blogs-column" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/black_bg.jpg" alt="">
+                        </div>
+                        <div class="blogs-container">
+                            <div class="item blogs-container-image"><img src="./img/hero-bg.jpg"  class="rounded" style="width: 200px; height: 200px;"></div>
+                            <div class="item blogs-container-category"><button class="tag-ML-DS">ML-DS</button>  <strong class="date">&nbsp;&nbsp;23 Aug 2023</strong></div>
+                            <div class="item blogs-container-heading"><h4>CDIS X ICG</h3></div>
+                                <div class="item blogs-container-author-and-link">
+                                    <div class="w-8 h-8 rounded">
+                                        <img class="blogs-container-logo" src="img/logo.png" alt="logo">
+                                    </div>
+                                    <div class="blogs-author-name"><strong>IITK CONSULTING GROUP</strong></div>
+                                    <a href="pastereportlinkhere.com">
+                                        <button class="blogs-container-link"><strong>Download</strong></button>
+                                    </a>
                                 </div>
-                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
-                                <p class="mb-4">
-                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
-                                </p>
-                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
-                            </div>
+                            <div class="px-3 bg-primary-500/5 text-primary-500 pt-3 pb-1">
+                                    <marquee class="w-full" direction="left" style="position:absolute; bottom:15px; width: 590px;">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores consequatur cumque repellat iure perferendis doloribus.
+                                    </marquee>
+                            </div>                            
                         </div>
                     </div>
-
-                    <!-- Blog Entry 5 -->
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex h-100">
-                            <div class="service-img">
-                                <img class="img-fluid" src="img/bg_super.png" alt="Blog Entry Image 1">
-                            </div>
-                            <div class="service-text p-5 pt-0">
-                                <div class="service-icon">
-                                    <img class="img-fluid rounded-circle" src="img/ML_icon.png" alt="Category Icon">
-                                </div>
-                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
-                                <p class="mb-4">
-                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
-                                </p>
-                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Entry 6 -->
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex h-100">
-                            <div class="service-img">
-                                <img class="img-fluid" src="img/red_bg.png" alt="Blog Entry Image 1">
-                            </div>
-                            <div class="service-text p-5 pt-0">
-                                <div class="service-icon">
-                                    <img class="img-fluid rounded-circle" src="img/consult_icon.png" alt="Category Icon">
-                                </div>
-                                <h5 class="mb-3">Predicting the Evolution of Deforestation in a Spatial Zone</h5>
-                                <p class="mb-4">
-                                    With funding from Google AI, we partnered with Moja Global and Makerere University to predict deforestation's evolution in a spatial zone. To achieve this, we used machine learning techniques such as time series forecasting and Long Short Term Memory (LSTM) on satellite images and ground reports collected by Makerere University.
-                                </p>
-                                <img src="./img/data.png" class="blog-element-image" width="320" alt="Blog Entry Image 1">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
+                </div> 
             </div>
-            <!-- End of Blog Container -->
-
+            
         </div>
-        <!-- End of Nested Container -->
-
     </div>
-    <!-- End of Main Container -->
-
-</body>
-
-</html>
-
 
     <!-- Footer Start -->
     <div class="container-fluid footer mt-5 py-5 wow fadeIn" style="background-color: rgb(55, 53, 53);" data-wow-delay="0.1s">
@@ -346,10 +233,7 @@
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://www.linkedin.com/company/iitkconsult/about/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-            
                 <div class="col-lg-3 col-md-6">
-                    <!-- adding space -->
-                    <p class="mobile-only"><br><br></p>
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <a class="btn btn-link" href="index.html#about">About Us</a>
                     <a class="btn btn-link" href="#team">Team</a>
@@ -396,7 +280,6 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
