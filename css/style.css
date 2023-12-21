@@ -23,6 +23,8 @@
   .blogs-container-author-and-link
   {
     display:flex;
+    position:relative;
+    top:-50%;
   }
   .blogs-author-name
   {
@@ -91,9 +93,9 @@
 
   .blogs-container-logo
   {
-   height: 33px;
-   width: 33px;
-   object-position: -5px -4px;
+   height: 35px;
+   width: 35px;
+   object-position: 0px 0px;
   }
 
 .w-full
