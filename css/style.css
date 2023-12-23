@@ -5,15 +5,26 @@
     display:grid;
     width:100%;
     grid-template-columns:1.2fr 1.5fr;
-    grid-template-rows:1fr 2fr 1fr;
-    gap:10px;
+    grid-template-rows:1fr 2fr ;
+    gap: 10px;
   }
-
   .blogs-container-image
   {
     grid-row:span 3;
     display:flex;
   }
+  .blogs-container-heading h4 {
+    font-family: sans-serif;
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  .service-item {
+    transition: transform 0.2s;
+}
+
+.service-item:hover {
+    transform: scale(1.15);
+}
   .blogs-conatiner-category
   {
     height:50%;
@@ -24,12 +35,14 @@
   {
     display:flex;
     position:relative;
-    top:-50%;
+    top: -110%;
   }
   .blogs-author-name
   {
     font-size:0.8rem;
     width:70%;
+    color:#1e1c1c;
+    font-style: bold;
   }
   .blogs-link
   {
@@ -41,30 +54,27 @@
     border: none;
     cursor: pointer;
     border-radius: 5px; /* Make the buttons curved */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
-    background-color: #cdf9d2;
+    background-color: rgb(0 190 130 / .1);
     font-weight: bold;
-    color: #399542;
+    color: rgb(0 190 130);
   }
   .tag-ML-DS{
     position: relative;
     border: none;
     cursor: pointer;
     border-radius: 5px; /* Make the buttons curved */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
-    background-color: #fcb9b9;
+    background-color:rgb(255 16 135 / .1);
     font-weight: bold;
-    color: #940303;
+    color: rgb(255, 16, 235);
   }
   .tag-Hybrid{
     position: relative;
     border: none;
     cursor: pointer;
     border-radius: 5px; /* Make the buttons curved */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
-    background-color: #c3ecf5;
+    background-color: rgb(56 116 255 / .1);
     font-weight: bold;
-    color: #3359b7;
+    color: rgb(56 116 255);
   }
   .date{
     color: rgb(17, 17, 17);
@@ -76,7 +86,7 @@
     cursor: pointer;
     border-radius: 5px; /* Make the buttons curved */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a glowing shadow effect */
-    background-color: #5db0dd;
+    background-color: #71b6d5;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;   /* Change the background color to blue */
   }
