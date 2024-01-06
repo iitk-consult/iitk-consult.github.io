@@ -144,14 +144,15 @@
 
   .blogs-container-body-heading
   {
-    width:60%;
-    font-size:1.7vw;
+    width:100%;
+    font-size:21px;
+    font-weight: bold;
   }
 
   .blogs-container-body-body
   {
     width:90%;
-    font-size:9px;
+    font-size:10px;
   }
   .service-item 
   {
