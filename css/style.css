@@ -40,24 +40,31 @@
 {
     font-size:40px;
     color:white; 
-    margin-top:50px;
+    margin-top:30px;
     margin-left:20px;
     grid-column:span 2;
 }
 
 .highlights-name-ca
 {
-    font-size:40px;
+    font-size:35px;
     color:black; 
-    margin-top:50px;
+    margin-top:20px;
     text-align:center;
+}
+.iitk-icg{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-top: -20px;
+    /* position: absolute; */
 }
 
 .highlights-body-g20
 {
     font-size:11px;
     color:white; 
-    margin-top:7px;
+    margin-top:5px;
     margin-left:20px;
 }
 
@@ -89,10 +96,18 @@
     grid-column-start: 1;
 }
 
+.highlights-download-button-g20{
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+
 .highlights-download-ca
 {
     display:flex;
     justify-content:center;
+    /* margin-top: 15px; */
+    margin-bottom: 25px;
+    
 }
 
 .highlights-download-button-g20
@@ -105,6 +120,7 @@
     display:block;
     width:50%;
     text-align:center;
+    margin-top: 10px;
 }
 
 .highlights-download-button-ca
@@ -489,10 +505,17 @@ a .lucide.lucide-arrow-right {
     background: rgba(0, 0, 0, .1);
     z-index: 1;
 }
+.carousel-control-prev{
+    margin-left: -90px;
+}
 
+.carousel-control-next{
+    margin-right: -70px;
+}
 .carousel-control-prev,
 .carousel-control-next {
     width: 15%;
+    margin-top: 60px;
 }
 
 .carousel-control-prev-icon,
