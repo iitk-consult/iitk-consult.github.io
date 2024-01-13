@@ -604,25 +604,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        // Function to update the active dot and navigate to the corresponding carousel item
-        function goToSlide(slideIndex) {
-            $('#myCarousel').carousel(slideIndex);
-            updateDots(slideIndex);
-        }
-    
-        // Function to update the active dot based on the current carousel item
-        $('#myCarousel').on('slide.bs.carousel', function (event) {
-            var activeIndex = event.to;
-            updateDots(activeIndex);
-        });
-    
-        // Function to update the dots based on the active carousel item
-        function updateDots(activeIndex) {
-            $('.carousel-dot').removeClass('active-dot');
-            $('.carousel-dot').eq(activeIndex).addClass('active-dot');
-        }
-    </script>
 
 </body>
 
