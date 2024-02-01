@@ -32,8 +32,8 @@
 {
     display:grid;
     height:40vh;
+    grid-template-columns:6fr 4fr;
     grid-template-rows:3fr 8fr 3fr;
-    grid-template-columns:1.5fr 1fr;
     gap: 10px;
 }
 
@@ -48,10 +48,13 @@
 
 .highlights-name-ca
 {
+    width:80%;
     grid-column-start: 2;
-    font-size:35px;
+    font-size:40px;
     color:white; 
-    margin-top:20px;
+    margin-top:30px;
+    margin-left:20px;
+    text-align:right;
 }
 .iitk-icg{
     font-size: 15px;
@@ -71,14 +74,13 @@
 
 .highlights-body-ca
 {
-    grid-column-start: 2;
-    font-size:12px;
-    color:white; 
-}
-
-.highlights-body-text-ca
-{
     width:80%;
+    grid-column-start: 2;
+    font-size:11px;
+    color:white; 
+    margin-top:5px;
+    margin-left:20px;
+    text-align:right;
 }
 
 .highlights-heading-g20
@@ -94,25 +96,25 @@
     grid-column-start: 1;
 }
 
-.highlights-download-button-g20{
-    margin-top: -15px;
-    margin-bottom: 5px;
-}
-
 .highlights-download-ca
 {
     grid-column-start: 2;
-    /* margin-top: 15px; */
-    margin-bottom: 25px;
+    display:flex;
+    justify-content: flex-end;
+    width:100%; 
+    height:fit-content;
     
 }
 
 .highlights-download-button-g20
 {
+    margin-right:-20px;
     background-color:darkorange;
     color:black;
     font-size: 20px;
     margin-left:20px;
+    margin-top: -15px;
+    margin-bottom: 5px;
     border-radius: 25px;
     display:block;
     width:50%;
@@ -121,14 +123,19 @@
 
 .highlights-download-button-ca
 {
-    background-color:white;
+    font-size: 20px;
+    margin-left:20px;
+    margin-top: -15px;
+    margin-bottom: 5px;
+    margin-right:75px;
+    border-radius: 25px;
+    background-color:darkorange;
     color:black;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 25px;
     display:block;
-    width:40%;
+    width:50%;
     text-align:center;
-    height:fit-content;
 }
   .blogs-column
   {
