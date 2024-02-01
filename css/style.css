@@ -36,7 +36,46 @@
     grid-template-rows:3fr 8fr 3fr;
     gap: 10px;
 }
-
+/* Media query for phone size */
+@media (width < 800px) {
+    #myCarousel { 
+      height: 300px; /* adjust height as needed */
+    }
+    .highlights-name-g20 {
+      font-size: 35px !important;
+      text-align: left !important;
+      margin-left:15px !important;
+    }
+    #g20-text {
+        white-space: nowrap; /* Prevents line breaks */
+    }
+      
+    #g20-text .second-line {
+        display: block; /* Forces "Presidency" onto a new line */
+    }
+    .highlights-download-button-g20{
+      font-size: 15px !important;
+      margin-left:15px !important;
+      margin-right:15px !important;
+      margin-top: 45px !important;
+      margin-bottom: 70px !important;
+    }
+    .highlights-name-ca {
+      font-size: 35px !important;
+      text-align: right !important;
+      margin-right:15px !important; 
+    }
+    .highlights-download-button-ca{
+      font-size: 15px !important;
+      margin-left:5px !important;
+      margin-right:15px !important;
+      margin-top: 45px !important;
+      margin-bottom: 20px !important;
+    }
+    .highlights-body-ca, .highlights-body-g20 {
+      display: none; /* hide the body text */
+    }
+  }  
 .highlights-name-g20
 {
     font-size:40px;
@@ -111,7 +150,7 @@
     margin-right:-20px;
     background-color:darkorange;
     color:black;
-    font-size: 20px;
+    font-size: 15px;
     margin-left:20px;
     margin-top: -15px;
     margin-bottom: 5px;
@@ -123,7 +162,7 @@
 
 .highlights-download-button-ca
 {
-    font-size: 20px;
+    font-size: 15px;
     margin-left:20px;
     margin-top: -15px;
     margin-bottom: 5px;
@@ -131,7 +170,7 @@
     border-radius: 25px;
     background-color:darkorange;
     color:black;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 25px;
     display:block;
     width:50%;
