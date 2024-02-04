@@ -1,4 +1,115 @@
-.highlights-row
+/* Media query for phone size */ 
+@media only screen and (max-width: 800px)
+{
+
+    .highlights-whole-g20
+    {
+        height:300px;
+        width:100%;
+        background-image:url("../img/g20_highlight_mobile.png");
+        background-size: 100% 100%;
+        border-radius: 25px;
+    }
+
+    .highlights-whole-ca
+    {
+        height:300px;
+        width:100%;
+        background-image:url("../img/case_almanac_highlight_mobile.png");
+        background-size: 100% 100%;
+        border-radius: 25px;
+    }
+
+    .highlights-container-g20
+    {
+        height:100%;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:6fr 1fr;
+    }
+
+    .highlights-container-ca
+    {
+        height:100%;
+        display:grid;
+        grid-template-columns:2fr 1fr;
+        grid-template-rows:6fr 1fr;
+    }
+
+    .highlights-name-g20
+    {
+        font-size:25px;
+        color:white; 
+        margin-top:40px;
+        margin-left:20px;
+        margin-bottom:10px;
+        grid-row-start: 2;
+    }
+    
+    .highlights-name-ca
+    {
+        font-size:25px;
+        color:white; 
+        margin-top:40px;
+        margin-left:20px;
+        margin-bottom:10px;
+        grid-row-start: 2;
+    }
+
+    .highlights-body-g20
+    {
+        display:none;
+    }
+
+    .highlights-body-ca
+    {
+        display:none;
+    }
+
+    .highlights-download-g20
+    {
+        display:flex;
+        justify-content: center;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .highlights-download-ca
+    {
+        display:flex;
+        justify-content: center;
+        grid-row-start: 2;
+        grid-column-start: 2; 
+    }
+
+    .highlights-download-button-g20
+    {
+        background-color:darkorange;
+        color:white;
+        font-size: 15px;
+        margin-top: 49px;
+        margin-bottom:15px;
+        border-radius: 25px;
+        display:block;
+        text-align:center;
+        width:75%;
+    }
+
+    .highlights-download-button-ca
+    {
+        background-color:darkorange;
+        color:white;
+        margin-top: 49px;
+        margin-bottom:15px;
+        font-size: 15px;
+        border-radius: 25px;
+        display:block;
+        text-align:center;
+        width:75%;
+    }
+}
+@media only screen and (min-width: 800px)
+{.highlights-row
 {
     width:100%;
     display:flex;
@@ -36,46 +147,7 @@
     grid-template-rows:3fr 8fr 3fr;
     gap: 10px;
 }
-/* Media query for phone size */
-@media (width < 800px) {
-    #myCarousel { 
-      height: 300px; /* adjust height as needed */
-    }
-    .highlights-name-g20 {
-      font-size: 35px !important;
-      text-align: left !important;
-      margin-left:15px !important;
-    }
-    #g20-text {
-        white-space: nowrap; /* Prevents line breaks */
-    }
-      
-    #g20-text .second-line {
-        display: block; /* Forces "Presidency" onto a new line */
-    }
-    .highlights-download-button-g20{
-      font-size: 15px !important;
-      margin-left:15px !important;
-      margin-right:15px !important;
-      margin-top: 45px !important;
-      margin-bottom: 70px !important;
-    }
-    .highlights-name-ca {
-      font-size: 35px !important;
-      text-align: right !important;
-      margin-right:15px !important; 
-    }
-    .highlights-download-button-ca{
-      font-size: 15px !important;
-      margin-left:5px !important;
-      margin-right:15px !important;
-      margin-top: 45px !important;
-      margin-bottom: 20px !important;
-    }
-    .highlights-body-ca, .highlights-body-g20 {
-      display: none; /* hide the body text */
-    }
-  }  
+
 .highlights-name-g20
 {
     font-size:40px;
@@ -175,7 +247,7 @@
     display:block;
     width:50%;
     text-align:center;
-}
+}}
   .blogs-column
   {
     margin-top: -1rem;
